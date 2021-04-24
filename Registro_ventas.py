@@ -116,6 +116,13 @@ while opcion != "3":
                         print(f'{nom:12}: {arti}')
             w = 1
             j = 1
+            
+            import sys
+            import time
+            formato = "%c"
+            ahora = time.strftime(formato)
+            print(ahora)
+            
         except:
             print("No existe ese numero de venta")
     opcion = input("[1] Registrar una venta \t[2] Consultar una venta \t[3] Salir: ")
